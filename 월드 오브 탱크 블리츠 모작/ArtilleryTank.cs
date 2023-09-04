@@ -65,7 +65,7 @@ public class ArtilleryTank : MonoBehaviour
         GameObject[] objsWithTag = TagObjectFinder.Instance.FindObjectWithTag(opponentTag);
         // minDistance ~ maxDistance 내에 있는 오브젝트를 필터링한다.
         GameObject[] inRangeObjs = objsWithTag.Where(x => minDistance <= Vector3.Distance(transform.position, x.transform.position)
-                                                        &&  Vector3.Distance(transform.position, x.transform.position) <= maxDistance).ToArray();
+                                                     && Vector3.Distance(transform.position, x.transform.position) <= maxDistance).ToArray();
 
         // 자주포를 제외한 일반(HPManager 컴포넌트를 가진 탱크) 탱크만을 필터링
         inRangeObjs = inRangeObjs.Where(x => x.GetComponent<HPManager>()).ToArray();

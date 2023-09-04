@@ -141,13 +141,13 @@ public class Projectile : MonoBehaviour
 
     // 부모 트랜스폼을 재귀적으로 타고 올라가며, 탱크의 트랜스폼을 찾는다.
     // (탱크는 HPManager 컴포넌트를 갖고 있다.)
-	Transform GetTankTransform(Transform tr)
-	{
+    Transform GetTankTransform(Transform tr)
+    {
         if (tr.GetComponent<HPManager>() || tr == tr.root)
             return tr;
 
-		return GetTankTransform(tr.parent);
-	}
+        return GetTankTransform(tr.parent);
+    }
 
     // 발사체를 쏜 탱크 자신과는 충돌하지 않도록 처리
     void SetIgnoreSelf()

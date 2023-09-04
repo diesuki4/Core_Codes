@@ -62,12 +62,12 @@ public class ArtilleryMissile : MonoBehaviour
     // 부모 트랜스폼을 재귀적으로 타고 올라가며, 탱크의 트랜스폼을 찾는다.
     // (탱크는 HPManager 컴포넌트를 갖고 있다.)
     Transform GetTankTransform(Transform tr)
-	{
+    {
         if (tr.GetComponent<HPManager>() || tr == tr.root)
             return tr;
 
-		return GetTankTransform(tr.parent);
-	}
+        return GetTankTransform(tr.parent);
+    }
 
     // 미사일 폭발
     // 반경 damageRadius 이내의 적에게 폭발 지점으로부터의 거리에 따라 데미지를 입힌다.

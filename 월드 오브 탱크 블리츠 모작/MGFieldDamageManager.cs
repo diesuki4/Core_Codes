@@ -17,7 +17,7 @@ public class MGFieldDamageManager : MonoBehaviour
 
     public LayerMask fieldLayerMask;    // 자기장의 레이어
     public GameObject[] tanks;          // 탱크 목록
-    public float damagePerSec = 10;
+    public float damagePerInterval = 10;
     public float damageInterval = 1;
     [HideInInspector]
     public float fieldDistance; // 현재 자기장의 반지름
@@ -56,7 +56,7 @@ public class MGFieldDamageManager : MonoBehaviour
                     HPManager targetHPManager = tank.GetComponent<HPManager>();
 
                     if (targetHPManager)
-                        targetHPManager.ApplyDamage(damagePerSec);
+                        targetHPManager.ApplyDamage(damagePerInterval);
                 }
             }
 

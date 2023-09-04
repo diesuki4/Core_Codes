@@ -16,41 +16,41 @@ public class TrackMover : MonoBehaviour
 
     [Header("정방향/역방향")]
     public Direction directon = Direction.Normal;
-	public Transform wheels;
+    public Transform wheels;
 
     [Header("속력")]
-	public float speed = 1;
+    public float speed = 1;
 
-	Material mat;
-	Vector2 UVDirection;
+    Material mat;
+    Vector2 UVDirection;
 
-	void Start()
-	{
-		mat = GetComponent<Renderer>().material;
+    void Start()
+    {
+        mat = GetComponent<Renderer>().material;
         UVDirection = new Vector2((float)directon, 0);
-	}
+    }
 
-	void Update() { }
+    void Update() { }
 
     // UV 오프셋을 조정해 무한궤도를 돌린다.
-	public void MoveTrack(Vector2 vector)
-	{
-		if (!mat)
-			return;
+    public void MoveTrack(Vector2 vector)
+    {
+        if (!mat)
+            return;
 
-		Vector2 moveVector = Vector2.zero;
+        Vector2 moveVector = Vector2.zero;
 
-		if (UVDirection.x != 0)
-			moveVector.x = vector.x * UVDirection.x;
-			
-		if (UVDirection.y != 0)
-			moveVector.y = vector.x * UVDirection.y;
-			
-		mat.mainTextureOffset += moveVector * speed * Time.deltaTime;
+        if (UVDirection.x != 0)
+            moveVector.x = vector.x * UVDirection.x;
+            
+        if (UVDirection.y != 0)
+            moveVector.y = vector.x * UVDirection.y;
+            
+        mat.mainTextureOffset += moveVector * speed * Time.deltaTime;
 
-		// 실제 바퀴들도 회전시켜준다.
-		if (wheels)
-			foreach (Transform child in wheels)
-				child.Rotate(Vector3.left * moveVector.x * speed * 5.f);
-	}
+        // 실제 바퀴들도 회전시켜준다.
+        if (wheels)
+            foreach (Transform child in wheels)
+                child.Rotate(Vector3.left * moveVector.x * speed * 5.f);
+    }
 }
