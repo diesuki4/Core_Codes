@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 // 로그인, 로그아웃, 회원가입, 개인정보 변경을 담당하는 계정 매니저이다.
-// - 일정 상의 문제로 API 서버 구축, 세션 관리 등은 하지 못했다.
+// - 클라이언트로 참여했기 때문에, API 서버 구축이나 세션 관리 등은 하지 않았다.
 public static class AccountManager
 {
     // DB 이름
