@@ -57,6 +57,11 @@
 - 많은 AI 탱크가 태그를 찾는 부하를 줄이기 위해 구현된 풀입니다.
 <br/><br/>
 
+[HPManager](https://github.com/diesuki4/Core_Codes/blob/main/%EC%9B%94%EB%93%9C%20%EC%98%A4%EB%B8%8C%20%ED%83%B1%ED%81%AC%20%EB%B8%94%EB%A6%AC%EC%B8%A0%20%EB%AA%A8%EC%9E%91/HPManager.cs)
+- 모든 탱크에 붙어있는 체력 컴포넌트입니다.
+- 점수 계산을 위해 자신을 마지막으로 때린 적을 저장하며, 데미지 처리와 죽음을 수행합니다.
+<br/><br/>
+
 [OutlineManager](https://github.com/diesuki4/Core_Codes/blob/main/%EC%9B%94%EB%93%9C%20%EC%98%A4%EB%B8%8C%20%ED%83%B1%ED%81%AC%20%EB%B8%94%EB%A6%AC%EC%B8%A0%20%EB%AA%A8%EC%9E%91/OutlineManager.cs)
 - 플레이어 화면 상 크로스헤어 안에 들어온 탱크에 외곽선을 표시하는 컴포넌트입니다.
 - 샤워기와 같은 원리로, 화면 중앙에서 반지름이 radius인 원 내에 deltaRadius/deltaAngle 마다 레이를 쏘아 탱크를 확인합니다.

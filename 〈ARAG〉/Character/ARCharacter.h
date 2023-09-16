@@ -77,7 +77,7 @@ protected:
     void Move(const FInputActionValue& Value);
     void Look(const FInputActionValue& Value);
     void LfMousePressed();  // 좌클릭 누를 때 처리
-    void LfMouseReleased(); // 롸쿨릭 뗐을 때 처리
+    void LfMouseReleased(); // 좌클릭 뗐을 때 처리
     void RtMousePressed();  // 우클릭 누를 때 처리
 
     // 캐릭터의 상태

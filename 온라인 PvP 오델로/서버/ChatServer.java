@@ -136,7 +136,7 @@ public class ChatServer extends ServerSocket implements Runnable
         {
             for (ChatUser info : chatUsers)
             {   
-				// 나의 아이디가 상대 아이디인 객체를 검색하고
+                // 나의 아이디가 상대 아이디인 객체를 검색하고
                 // 그 객체의 연결로 메세지를 전송한다.
                 if (info.getMyId().equals(vsId))
                 {
