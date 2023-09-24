@@ -25,6 +25,6 @@ void AARSword::LfMousePressed()
 void AARSword::Attack()
 {
     Super::Attack();
-    // 근접 공격은 부모인 Weapon Base에서 제공하는 기능이다.
+    // 근접 공격은 조부모인 Weapon Base에서 제공하는 기능이다.
     MeleeAttack();
 }

@@ -18,6 +18,10 @@ using Timeline.Timeline;
 // false                (active)
 // 30, 40, 50           (position)
 // 1, 2, 3, 4           (rotation)
+// 420                  (프레임)
+// true                 (active)
+// 10, 20, 30           (position)
+// 5, 6, 7, 8           (rotation)
 //
 // eeee-ffff-gggg-hhhh  (GUID)
 // Light                (소품 종류)

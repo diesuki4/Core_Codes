@@ -137,7 +137,7 @@ public class SHTGameManager : MonoBehaviourPunCallbacks
         // 방장이면
         if (PhotonNetwork.IsMasterClient && isEnd == false)
         {
-            // 현재 클라이언트 수와 종료 플레이어 수가 같으지 확인한다.
+            // 현재 클라이언트 수와 종료 플레이어 수가 같은지 확인한다.
             if (playerEndCount == PhotonNetwork.CurrentRoom.PlayerCount)
             {
                 // 내가 죽었으면, 나가고 다음 사람에게 방장을 넘긴다.

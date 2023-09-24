@@ -13,7 +13,7 @@
 - 모든 것을 다 이해할 수는 없지만, 대략 어떤 것을 하는지 정도는 파악하고 작성합니다.  
 <br/><br/>
 
-변수명이나 함수명을 정할 때 대소문자나 접두사를 통한 정해진 코딩 스타일을 지키려고 노력합니다.
+변수명이나 함수명을 정할 때 대소문자나 접두사를 통한 정해진 네이밍 컨벤션을 지키려고 노력합니다.
 - bool bUseAntiAliasing;
 - int nDeadPlayers;
 - FData UDataComponent::GetDataByName(FName InName);

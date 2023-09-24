@@ -51,7 +51,7 @@
 <br/><br/>
 
 [MatchServer](https://github.com/diesuki4/Core_Codes/blob/main/%EC%98%A8%EB%9D%BC%EC%9D%B8%20PvP%20%EC%98%A4%EB%8D%B8%EB%A1%9C/%EC%84%9C%EB%B2%84/MatchServer.java) (포트: 32438/TCP)
-- LinkedBlockingQueue(대기열이 비었을 경우 wait) 자료구조를 활용해 유저들의 PvP 매칭을 진행합니다.
+- LinkedBlockingQueue(Thread-safe, 대기열이 비었을 경우 wait) 자료구조를 활용해 유저들의 PvP 매칭을 진행합니다.
 - 대기열의 크기가 2 이상이면 FIFO에 따라 Front의 2명을 꺼내, 게임 진행 자식 스레드를 생성해 게임을 진행시킵니다.
 - 게임은 [Reversi](https://github.com/diesuki4/Core_Codes/blob/main/%EC%98%A8%EB%9D%BC%EC%9D%B8%20PvP%20%EC%98%A4%EB%8D%B8%EB%A1%9C/%EC%84%9C%EB%B2%84/Reversi.java)(오델로 판) 객체를 통해 진행되며, 자식 스레드는 입출력과 상태 전송, 탈주 판정을 진행합니다.
 <br/><br/>

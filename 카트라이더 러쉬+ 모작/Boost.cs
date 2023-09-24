@@ -166,7 +166,7 @@ public class Boost : MonoBehaviour
         t = 0;
 
         // PD.o_maxSpeed = 플레이어 기본 최대 속력
-        // 복구 시간 동안 최대 속력을 boostMaxSpeedFactor 속도로 PD.o_maxSpeed 감소시킨다.
+        // 복구 시간 동안 최대 속력을 boostMaxSpeedFactor 속도로 PD.o_maxSpeed까지 감소시킨다.
         while (t < recoverTime)
         {
             t += Time.deltaTime;

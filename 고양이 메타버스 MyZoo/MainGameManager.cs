@@ -94,7 +94,7 @@ public class MainGameManager : MonoBehaviour
         }
     }
 
-    // 기기 오규 식별 번호, 호감도, 굶주림, 청결도를
+    // 기기 고유 식별 번호, 호감도, 굶주림, 청결도를
     // 비동기 방식으로 POST 요청을 보내 서버에 저장한다.
     async UniTaskVoid Save()
     {
