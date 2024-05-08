@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package match;
+
+service Match
+{
+    rpc GetDestination(Empty) returns (MatchResponse) { }
+
+    rpc UpdateToMatchmaker(UpdateRequest) returns (UpdateResponse) { }
+    rpc RemoveFromMatchmaker(RemoveRequest) returns (RemoveResponse) { }
+}
+
+message Empty { }
+
+message MatchResponse
+{
+    string matched_server = 1;
+    bool success = 2;
+}
+
+message UpdateRequest
+{
+    string server_address = 1;
+    int32 num_current_clients = 2;
+}
+
+message UpdateResponse
+{
+    bool success = 1;
+}
+
+message RemoveRequest
+{
+    string server_address = 1;
+}
+
+message RemoveResponse
+{
+    bool success = 1;
+}
