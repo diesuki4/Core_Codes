@@ -1,6 +1,6 @@
 ## Girlz Xtreme 핵심 코드 [(전체 소스 보기)](https://github.com/futurelabunseen/C-KyungbinCho/tree/test)
 
-#### 언리얼 엔진 5로 제작 중인 팀 기반 멀티플레이어 하이퍼 슈팅 장르 Girlz Xtreme입니다.
+#### 언리얼 엔진 5로 제작한 멀티플레이어 PvP 하이퍼 슈팅 장르 Girlz Xtreme입니다.
 
 인원: 1인 개발
 
@@ -14,10 +14,8 @@
 - AWS
 - Dedicated Server
 - GAS
+- Python
 - gRPC
-
-참고 사항
-- 개발 중인 프로젝트입니다.
 <br/><br/>
 
 ## 캐릭터
